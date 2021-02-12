@@ -16,7 +16,8 @@ install:
   - pip install codacy-coverage
 script:
   - cd decide
-  - python-codacy-coverage -r coverage.xml
+  - sudo apt-get install firefox
+  - cp travis_local_settings.py local_settings.py
 notifications:
   email:
     recipients:
